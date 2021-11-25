@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Aula de Metodologias de Desenvolvimento de Software</title>
+</head>
+<body>
+
+	<h2>Minha lista</h2>
+
+	Novo item: 
+	<input id="item" type="text">
+	<button onclick="addItem2()">Adicionar item</button>
+
+	<ul id="lista">
+		<li>Item 1</li>
+		<li>Item 2</li>
+		<li>Item 3</li>						
+	</ul>
+
+	<script type="text/javascript">
+		
+		function addItem() {
+			x = document.getElementById("item").value;
+			document.getElementById("lista").innerHTML += "<li>" + x + "</li>";
+		}
+
+		function addItem2() {
+
+			x = document.getElementById("item").value;
+			it = document.createElement("li");
+			it.innerHTML = x;
+			document.getElementById("lista").appendChild(it);
+			document.getElementById("item").value = "";
+			document.getElementById("item").focus();
+
+		}
+
+	</script>
+
+</body>
+</html>
