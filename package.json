@@ -1,0 +1,19 @@
+{
+  "name": "informatica",
+  "version": "1.0.0",
+  "description": "aula de informática",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tiaoricardo/js.git"
+  },
+  "author": "Professor Sebastião",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tiaoricardo/js/issues"
+  },
+  "homepage": "https://github.com/tiaoricardo/js#readme"
+}

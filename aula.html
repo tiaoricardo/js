@@ -6,11 +6,13 @@
 </head>
 <body>
 
+	<img src="if.png" width="50">
+
 	<h2>Minha lista</h2>
 
 	Novo item: 
 	<input id="item" type="text">
-	<button onclick="addItem2()">Adicionar item</button>
+	<button onclick="addItem3()">Adicionar item</button>
 
 	<ul id="lista">
 		<li>Item 1</li>
@@ -33,6 +35,27 @@
 			document.getElementById("lista").appendChild(it);
 			document.getElementById("item").value = "";
 			document.getElementById("item").focus();
+
+		}
+
+		function $(id) {
+			return document.getElementById(id);
+		}
+
+		function el(tag) {
+			return document.createElement(tag);
+		}
+
+		function addItem3() {
+
+			console.log('O usuário informou um item!');
+
+			x = $("item").value;
+			it = el("li");
+			it.innerHTML = x;
+			$("lista").appendChild(it);
+			$("item").value = "";
+			$("item").focus();
 
 		}
 
